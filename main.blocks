@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="U;x%Ha=cdn#;(4m6`+1b">Lorsque</variable></variables><block type="device_forever" id="GgI4bq0)G{,%}Z^7?{@m" x="222" y="104"><statement name="HANDLER"><block type="controls_if" id="ZH6i*a1yFeDmf~Hkl]^2"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="_Rg/hyEd^ep~rICFob^^"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_Din_value" id="]OwO{2|6TDUS=Vicz;#("><field name="groveport">GrovePort.P8</field></block></value><value name="B"><shadow type="math_number" id="M0$$p4413)[OIGNe#]tO"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="]Xx-Ol3RgYjp@q$Cy;W8"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="gx0)gKIEeDP$Fm:IA3U8"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement></block></statement></block></xml>
