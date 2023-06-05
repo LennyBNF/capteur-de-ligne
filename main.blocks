@@ -1,13 +1,37 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="U;x%Ha=cdn#;(4m6`+1b">Lorsque</variable></variables><block type="device_forever" id="GgI4bq0)G{,%}Z^7?{@m" x="222" y="104"><statement name="HANDLER"><block type="controls_if" id="ZH6i*a1yFeDmf~Hkl]^2"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="_Rg/hyEd^ep~rICFob^^"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_Din_value" id="]OwO{2|6TDUS=Vicz;#("><field name="groveport">GrovePort.P8</field></block></value><value name="B"><shadow type="math_number" id="M0$$p4413)[OIGNe#]tO"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="]Xx-Ol3RgYjp@q$Cy;W8"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="U;x%Ha=cdn#;(4m6`+1b">Lorsque</variable></variables><block type="pxt-on-start" id="UqBL80q{zJ3Ee%CznCQj" x="107" y="-80"><statement name="HANDLER"><block type="radio_set_group" id="D-G@9UVc:]Rci2M7a)(H"><value name="ID"><shadow type="math_number_minmax" id="6|!2VGSB+)c*Ql%idO[H"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">33</field></shadow></value></block></statement></block><block type="device_forever" id="GgI4bq0)G{,%}Z^7?{@m" x="-209" y="32"><statement name="HANDLER"><block type="controls_if" id="ZH6i*a1yFeDmf~Hkl]^2"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="_Rg/hyEd^ep~rICFob^^"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_Din_value" id="]OwO{2|6TDUS=Vicz;#("><field name="groveport">GrovePort.P8</field></block></value><value name="B"><shadow type="math_number" id="M0$$p4413)[OIGNe#]tO"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="]Xx-Ol3RgYjp@q$Cy;W8"><field name="LEDS">`
         . . . . . 
-        . # . # . 
-        . . . . . 
-        . # # # . 
-        # . . . #
+        . . . . # 
+        . . . # . 
+        # . # . . 
+        . # . . .
         `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="gx0)gKIEeDP$Fm:IA3U8"><field name="LEDS">`
+        # . . . . 
+        # . . . . 
+        # . . . . 
+        # . . . . 
+        # . . . .
+        `</field><next><block type="radio_datagram_send_string" id="0*qAadvRzY%H]/Of!o@u"><value name="msg"><shadow type="text" id=";cu%Y`hHhZjcyo1,DvcD"><field name="TEXT">Obstacle gauche</field></shadow></value></block></next></block></statement></block></statement></block><block type="device_forever" id="eX(8po51gPS?eW78qZ(i" x="290" y="23"><statement name="HANDLER"><block type="controls_if" id="ki|6b(yM?/3laAy[wDSW"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="1Fs6]GX?~-kQ:IOc]{-A"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_Din_value" id="MgXNE5MUlSr+78;4lP!d"><field name="groveport">GrovePort.P1</field></block></value><value name="B"><shadow type="math_number" id="F!wjHjkyymKR/IHW#I.I"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="~QdW8lFJ/cf^53IZG,yH"><field name="LEDS">`
         . . . . . 
-        . # . # . 
+        . . . . # 
+        . . . # . 
+        # . # . . 
+        . # . . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="jN/ze0Ws)jZ_R(6Iika$"><field name="LEDS">`
+        # # # # # 
         . . . . . 
-        # . . . # 
-        . # # # .
-        `</field></block></statement></block></statement></block></xml>
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send_string" id="!_#VyofSaH?[)k6gKYtQ"><value name="msg"><shadow type="text" id="s*{#1sAR~{.`l9V5QWtU"><field name="TEXT">Obstacle frontale</field></shadow></value></block></next></block></statement></block></statement></block><block type="device_forever" id="nmZqhXVe?ZB!jwO+M5jq" x="794" y="13"><statement name="HANDLER"><block type="controls_if" id="d,|*UU7|}YuXGf=mE.(Q"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="qkH0F:cqfQai,cBS|pDr"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_Din_value" id="WI|qx@-,4f(@m1mXpUzp"><field name="groveport">GrovePort.P0</field></block></value><value name="B"><shadow type="math_number" id="=sOm6zA[t?E_#AB.o5LJ"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="WV}7lC)Rvj3)M0lUG4`^"><field name="LEDS">`
+        . . . . . 
+        . . . . # 
+        . . . # . 
+        # . # . . 
+        . # . . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="Q?4e4@,=/6428IJGjw4^"><field name="LEDS">`
+        . . . . # 
+        . . . . # 
+        . . . . # 
+        . . . . # 
+        . . . . #
+        `</field><next><block type="radio_datagram_send_string" id="7?=Y[4PcyE/zMv)T@56}"><value name="msg"><shadow type="text" id="0`xx~%_0B-/$b1@H2T1d"><field name="TEXT">Obstacle droite</field></shadow></value></block></next></block></statement></block></statement></block></xml>
